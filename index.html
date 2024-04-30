@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLW Unite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="7.11111" fill="#F48F56" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.0682 15.0583V12.7586L5.71097 15.12H5.69678V17.482H5.71097L12.0682 19.8462V17.5415L8.80823 16.2975L12.0682 15.0583Z"
+                fill="#00292E" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M19.6328 18.0617L22.89 16.8248L19.6328 15.5878V13.2881L25.9829 15.6522H25.9998V18.0164H25.9829L19.6328 20.3686V18.0617ZM16.9057 10.0309L13.1708 22.0165H15.387L19.1219 10.0309H16.9057Z"
+                fill="#00292E" />
+        </svg>
+    </header>
+    <main>
+        <section class="inscricao" >
+            <h1>Inscrição</h1>
+            <form class="formulario" onsubmit="">
+                <div class="name">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Nome completo" 
+                        required
+                    >
+                </div>
+                <div class="email">
+                    <ion-icon name="at-outline"></ion-icon>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="E-mail" 
+                        required
+                    >
+                </div>
+                <button type="submit" class="btn">REALIZAR INSCRIÇÃO</button>
+            </form>
+        </section>
+
+        <section class="usuarios">
+            <h1>Participantes</h1>
+            <div class="rounded">
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Participante</th>
+                        <th>Data da inscrição</th>
+                        <th>Data do check-in</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span>Mario Fernandes</span><br>         
+                            <small>mario@email.com</small>
+                        </td>
+                        <td>há 3 dias</td>
+                        <td>há 3 minutos</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Diego Fernandes</span><br>         
+                            <small>diego@email.com</small>
+                        </td>
+                        <td>há 3 dias</td>
+                        <td>há 3 minutos</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        </section>
+    </main>
+</body>
+<!-- Biblioteca ionic icons para trabalhar com icones -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- Biblioteca pessoal -->
+<script type="module" src="assets/js/users.js"></script>
+<script type="module" src="assets/js/app.js"></script>
+<!-- Biblioteca day js para trabalhar com datas 
+https://day.js.org/docs/en/display/to
+Biblioteca swiperjs para trabalhar com carrossel 
+https://swiperjs.com/   
+-->
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+<script>
+  dayjs.extend(window.dayjs_plugin_relativeTime)
+</script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+<script>
+  dayjs.locale('pt-br')
+</script>
+<!-- Biblioteca alert 
+
+-->
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</html>
